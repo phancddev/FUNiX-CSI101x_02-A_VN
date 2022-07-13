@@ -1,11 +1,17 @@
 image = new SimpleImage("flowers.jpg");
+height = image.getHeight()
+
 
 for (pixel: image) {
+ y = pixel.getY();
  
+ if (y >= height/2) {
    avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue())/3
    pixel.setRed(avg);
    pixel.setGreen(avg);
    pixel.setBlue(avg);
+ }
+
   
 }
 

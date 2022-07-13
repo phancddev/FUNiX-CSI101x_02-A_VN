@@ -1,0 +1,17 @@
+image = new SimpleImage("flowers.jpg");
+height = image.getHeight()
+doSangPic = 0.7;
+for (pixel: image) {
+ y = pixel.getY();
+ if (y >= height/2) {
+    pixel.setRed(pixel.getRed() * doSangPic);
+    pixel.setGreen(pixel.getGreen() * doSangPic);
+    pixel.setBlue(pixel.getBlue() * doSangPic);  
+ }
+
+  
+}
+
+
+
+print(image);
