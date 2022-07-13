@@ -1,0 +1,10 @@
+image = new SimpleImage("flowers.jpg");
+doSangPic = 2;
+for (pixel: image) {
+ 
+   
+    pixel.setBlue(pixel.getBlue() * doSangPic);  
+  
+}
+
+print(image);
